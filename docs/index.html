@@ -1,183 +1,92 @@
-<!DOCTYPE html>
+        <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>InsightVibe Media</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-
-<style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: #111;
-    color: #fff;
-    text-align: center;
-    padding: 1.5em 0;
-}
-
-.hero {
-    background: linear-gradient(90deg, #222, #444);
-    color: #fff;
-    text-align: center;
-    padding: 25px 10px;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 10px 0;
-    text-align: center;
-    background-color: #333;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-main {
-    padding: 20px;
-    margin-bottom: 80px;
-    padding: 20px;
-}
-
-section {
-    background: #fff;
-    margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 6px;
-}
-
-footer {
-    background-color: #111;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-} 
-    .featured h2 {
-    margin-bottom: 10px;
-}
-
-.post-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 15px;
-}
-
-.post-card {
-    background: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,.06);
-}
-
-.post-card h3 {
-    margin-top: 5px;
-}
-
-.post-card p {
-    font-size: 0.9rem;
-    margin: 8px 0 12px;
-}
-
-.tag {
-    padding: 4px 8px;
-    border-radius: 6px;
-    font-size: 12px;
-    color: #fff;
-}
-
-.tag.music { background:#FF7A00; }
-.tag.sports { background:#0A2540; }
-.tag.news { background:#1B3A66; }
-    
-</style>
 
 <header>
     <h1>InsightVibe Media</h1>
-    <p>Your Home for Music, Sports & Trending News</p>
+    <p>Music • Sports • News</p>
 </header>
-
-<div class="hero">
-    <h2>Welcome to InsightVibe Media</h2>
-    <p>Stay updated with the latest vibes and stories.</p>
-</div>
 
 <nav>
     <ul>
-        <li><a href="#music">Music</a><<li>
-            <a href="about.html">About</a></li>
-<li><a href="contact.html">Contact</a></li>
+        <li><a href="#music">Music</a></li>
         <li><a href="#sports">Sports</a></li>
         <li><a href="#news">News</a></li>
-        
+        <li><a href="#latest-music">Downloads</a></li>
     </ul>
 </nav>
 
 <main>
-    <section class="featured">
-    <h2>Featured Posts</h2>
 
-    <div class="post-grid">
-
-        <article class="post-card">
-            <span class="tag music">Music</span>
-            <h3>Top Afrobeats Hits of 2025</h3>
-            <p>A curated list of trending Afrobeats songs dominating playlists this year.</p>
-            <a href="post1.html" class="btn">Read More</a>
-        </article>
-
-        <article class="post-card">
-            <span class="tag sports">Sports</span>
-            <h3>Weekend Premier League Highlights</h3>
-            <p>Key match results, standout players, and talking points from the weekend games.</p>
-            <a href="post2.html" class="btn">Read More</a>
-        </article>
-
-        <article class="post-card">
-            <span class="tag news">News</span>
-            <h3>Entertainment Headlines to Follow</h3>
-            <p>Latest stories shaping music, culture, and entertainment across the globe.</p>
-            <a href="#" class="btn">Read More</a>
-        </article>
-
-    </div>
-    </section>
+    <!-- MUSIC SECTION -->
     <section id="music">
-        <h2>Music</h2>
-        <p>Latest music updates will appear here.</p>
+        <h2>Music Updates</h2>
+        <p>Latest music promotions, artist releases, and entertainment content.</p>
     </section>
 
+    <!-- LATEST MUSIC DOWNLOADS ON HOMEPAGE -->
+    <section id="latest-music" class="downloads">
+        <h2>Latest Music Downloads</h2>
+
+        <div class="track-list">
+
+            <div class="track">
+                <img src="images/firevibe.jpg" alt="Fire Vibe" class="track-img" />
+                <p>🔥 Fire Vibe — Young Star</p>
+                <audio controls>
+                    <source src="downloads/firevibe.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <a href="downloads/firevibe.mp3" download="FireVibe.mp3" class="btn">Download</a>
+            </div>
+
+            <div class="track">
+                <img src="images/streetanthem.jpg" alt="Street Anthem" class="track-img" />
+                <p>🎵 Street Anthem — K-Wave</p>
+                <audio controls>
+                    <source src="downloads/streetanthem.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <a href="downloads/streetanthem.mp3" download="StreetAnthem.mp3" class="btn">Download</a>
+            </div>
+
+            <div class="track">
+                <img src="images/nightgroove.jpg" alt="Night Groove" class="track-img" />
+                <p>✨ Night Groove — DJ Motion</p>
+                <audio controls>
+                    <source src="downloads/nightgroove.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <a href="downloads/nightgroove.mp3" download="NightGroove.mp3" class="btn">Download</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SPORTS SECTION -->
     <section id="sports">
         <h2>Sports</h2>
-        <p>Sports news and match updates will appear here.</p>
+        <p>Match results, transfer news, football highlights, and sports stories.</p>
     </section>
 
+    <!-- NEWS SECTION -->
     <section id="news">
-        <h2>News</h2>
-        <p>Breaking and trending stories will appear here.</p>
+        <h2>Latest News</h2>
+        <p>Trending updates across lifestyle, entertainment, and headlines.</p>
     </section>
+
 </main>
 
 <footer>
-    <p>&copy; 2025 InsightVibe Media</p>
+    <p>&copy; 2025 InsightVibe Media — All Rights Reserved</p>
 </footer>
 
 </body>
-  </html>
+</html>
